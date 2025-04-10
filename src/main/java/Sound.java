@@ -20,7 +20,9 @@ int total = 0;
       if(samples[i] > limit){ 
         samples[i] = limit;
       total += 1;
-      }
+      }else if(samples[i] < -limit){
+        samples[i] = -limit; 
+        total += 1; 
     }
       return total;
   }
