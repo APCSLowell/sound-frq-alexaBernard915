@@ -34,7 +34,7 @@ int total = 0;
    */
   public void trimSilenceFromBeginning()
   {
-    numFirstZ = 0; 
+    int numFirstZ = 0; 
     int i = 0; 
     while(samples[i] == 0){
       numFirstZ += 1;
