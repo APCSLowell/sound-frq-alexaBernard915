@@ -36,15 +36,13 @@ int total = 0;
    */
   public void trimSilenceFromBeginning()
   {
-    int numFirstZ = 0; 
     int i = 0; 
     while(samples[i] == 0){
-      numFirstZ += 1;
       i++;
         }
-    int [] newSamples = new int [samples.length - numFirstZ];
+    int [] newSamples = new int [samples.length - i];
     for(int n = 0; n < newSamples.length; n++){
-      newSamples[n] = samples[n + numFirstZ]; 
+      newSamples[n] = samples[n + i]; 
     }
     samples = newSamples; 
   }
