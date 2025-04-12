@@ -44,7 +44,7 @@ int total = 0;
         }
     int [] newSamples = new int [samples.length - numFirstZ];
     for(int n = numFirstZ; n < samples.length; n++){
-      newSamples[i - numFirstZ] = samples[i]; 
+      newSamples[n] = samples[n + numFirstZ]; 
     }
     samples = newSamples; 
   }
