@@ -24,6 +24,7 @@ int total = 0;
         samples[i] = -limit; 
         total += 1; 
     }
+    }
       return total;
   }
 
